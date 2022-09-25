@@ -1,0 +1,9 @@
+DELIMITER //
+CREATE PROCEDURE sp_get_userById
+(IN uid INT)
+BEGIN
+SELECT *
+FROM users
+WHERE user_id = uid;
+END //
+DELIMITER ;
